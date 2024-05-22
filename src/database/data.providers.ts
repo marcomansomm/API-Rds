@@ -10,7 +10,7 @@ export const databaseProviders = [
         port: 3306,
         username: 'admin',
         password: 'password',
-        database: 'nest',
+        database: 'database-mmms3-jggfm',
       });
       sequelize.addModels([]);
       await sequelize.sync();
