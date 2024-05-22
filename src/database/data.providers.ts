@@ -1,5 +1,4 @@
 import { Sequelize } from 'sequelize-typescript';
-import { Departamento } from '../departments/models/Departamento.model';
 
 export const databaseProviders = [
   {
@@ -13,7 +12,7 @@ export const databaseProviders = [
         password: 'password',
         database: 'nest',
       });
-      sequelize.addModels([Departamento]);
+      sequelize.addModels([]);
       await sequelize.sync();
       return sequelize;
     },
