@@ -8,7 +8,7 @@ export class DepartamentoService {
 
   async findAll(): Promise<any> {
     const [results, metadata] = await this.sequelize.query(
-      'SELECT * FROM Departamentos',
+      'SELECT * FROM Departamento',
     );
     return results;
   }
