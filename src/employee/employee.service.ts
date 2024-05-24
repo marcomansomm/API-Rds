@@ -9,6 +9,7 @@ export class EmployeeService {
     const [results, metadata] = await this.sequelize.query(
       'SELECT * FROM Empregado',
     );
+    console.log(results);
     return results;
   }
 }

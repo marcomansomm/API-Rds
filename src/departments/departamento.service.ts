@@ -10,6 +10,7 @@ export class DepartamentoService {
     const [results, metadata] = await this.sequelize.query(
       'SELECT * FROM Departamento',
     );
+    console.log(results);
     return results;
   }
 }
